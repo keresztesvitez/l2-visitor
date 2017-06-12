@@ -3,18 +3,18 @@ package com.epam;
 public class Employee {
 
     private String name;
-    private int salary;
-    private String department;
+    private double salary;
+    private Department department;
 
     public String getName() {
         return name;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public String getDepartment() {
+    public Department getDepartment() {
         return department;
     }
 
@@ -22,11 +22,11 @@ public class Employee {
         this.name = name;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(Department department) {
         this.department = department;
     }
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class TotalSalariesVisitor implements Visitor {
 
-    private int totalSalaries = 0;
+    private double totalSalaries = 0;
 
     public void visit(Company company) {
         List<Employee> employees = company.getEmployees();
@@ -19,7 +19,7 @@ public class TotalSalariesVisitor implements Visitor {
         return total;
     }
 
-    public int getTotalSalaries() {
+    public double getTotalSalaries() {
         return totalSalaries;
     }
 }

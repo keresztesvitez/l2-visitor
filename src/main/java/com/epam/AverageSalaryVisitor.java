@@ -3,7 +3,7 @@ package com.epam;
 import java.util.List;
 
 public class AverageSalaryVisitor implements Visitor {
-    private int averageSalary = 0;
+    private double averageSalary = 0;
 
     public void visit(Company company) {
         List<Employee> employees = company.getEmployees();
@@ -18,7 +18,7 @@ public class AverageSalaryVisitor implements Visitor {
         return total / employees.size();
     }
 
-    public int getAverageSalary() {
+    public double getAverageSalary() {
         return averageSalary;
     }
 }
